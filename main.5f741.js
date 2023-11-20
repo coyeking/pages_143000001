@@ -33,6 +33,15 @@ window.boot = function () {
             setLoadingDisplay();
         }
 
+        // if (!CC_DEBUG && cc.sys.isMobile) {
+        //     if (cc.screen["fullScreen"]) {
+        //         cc.screen["fullScreen"]()
+        //     }
+        //     if (cc.screen["autoFullScreen"]) {
+        //         cc.screen["autoFullScreen"]();
+        //     }
+        // }
+
         if (cc.sys.isMobile) {
             if (settings.orientation === 'landscape') {
                 cc.view.setOrientation(cc.macro.ORIENTATION_LANDSCAPE);
@@ -123,7 +132,7 @@ window.boot = function () {
 if (window.jsb) {
     var isRuntime = (typeof loadRuntime === 'function');
     if (isRuntime) {
-        require('src/settings.4d683.js');
+        require('src/settings.a2c69.js');
         require('src/cocos2d-runtime.js');
         if (CC_PHYSICS_BUILTIN || CC_PHYSICS_CANNON) {
             require('src/physics.js');
@@ -131,7 +140,7 @@ if (window.jsb) {
         require('jsb-adapter/engine/index.js');
     }
     else {
-        require('src/settings.4d683.js');
+        require('src/settings.a2c69.js');
         require('src/cocos2d-jsb.js');
         if (CC_PHYSICS_BUILTIN || CC_PHYSICS_CANNON) {
             require('src/physics.js');
